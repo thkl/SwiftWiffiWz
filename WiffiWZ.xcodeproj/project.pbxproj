@@ -13,6 +13,8 @@
 		E931E5D81D82F20400548263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E931E5D61D82F20400548263 /* LaunchScreen.storyboard */; };
 		E931E5E01D82F24A00548263 /* wiffi_manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E931E5DF1D82F24A00548263 /* wiffi_manager.swift */; };
 		E931E5EB1D82F7DE00548263 /* WiffiWZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E931E5EA1D82F7DE00548263 /* WiffiWZTests.swift */; };
+		E9A1F53F1D84A1ED005DE518 /* MKRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A1F53E1D84A1ED005DE518 /* MKRingProgressView.swift */; };
+		E9A1F5411D84A261005DE518 /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A1F5401D84A261005DE518 /* MKGradientGenerator.swift */; };
 		E9E342471D83467A00094925 /* MeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E342461D83467A00094925 /* MeasurementViewController.swift */; };
 		E9E3424D1D834F9800094925 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9E3424F1D834F9800094925 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		E931E5E81D82F7DE00548263 /* WiffiWZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiffiWZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E931E5EA1D82F7DE00548263 /* WiffiWZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiffiWZTests.swift; sourceTree = "<group>"; };
 		E931E5EC1D82F7DE00548263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A1F53E1D84A1ED005DE518 /* MKRingProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKRingProgressView.swift; sourceTree = "<group>"; };
+		E9A1F5401D84A261005DE518 /* MKGradientGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKGradientGenerator.swift; sourceTree = "<group>"; };
 		E9E342461D83467A00094925 /* MeasurementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementViewController.swift; sourceTree = "<group>"; };
 		E9E3424E1D834F9800094925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E9E342501D834FA200094925 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				E931E5D91D82F20400548263 /* Info.plist */,
 				E931E5DF1D82F24A00548263 /* wiffi_manager.swift */,
 				E9E342461D83467A00094925 /* MeasurementViewController.swift */,
+				E9A1F5401D84A261005DE518 /* MKGradientGenerator.swift */,
+				E9A1F53E1D84A1ED005DE518 /* MKRingProgressView.swift */,
 				E9E3424F1D834F9800094925 /* Localizable.strings */,
 			);
 			path = WiffiWZ;
@@ -157,11 +163,13 @@
 					E931E5C51D82F20400548263 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = N52R95YQZM;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					E931E5E71D82F7DE00548263 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = N52R95YQZM;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E931E5C51D82F20400548263;
 					};
@@ -216,6 +224,8 @@
 				E931E5E01D82F24A00548263 /* wiffi_manager.swift in Sources */,
 				E931E5CA1D82F20400548263 /* AppDelegate.swift in Sources */,
 				E9E342471D83467A00094925 /* MeasurementViewController.swift in Sources */,
+				E9A1F5411D84A261005DE518 /* MKGradientGenerator.swift in Sources */,
+				E9A1F53F1D84A1ED005DE518 /* MKRingProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
