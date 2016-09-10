@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  WiffiWZ
+
+  Created by Thomas Kluge on 09.09.16.
+  Copyright © 2016 kSquare.de. All rights reserved.
+*/
+
+
+"yes"="Ja";
+"no"="Nein";
+"Temperature"="Temperatur";
+"Humidity"="Feuchtigkeit";
+"Noise"="Geräusch";
+"Motion left"="Bewegung links";
+"Motion right"="Bewegung rechts";
+"Airpressure"="Luftdruck";
+"Airpressure trend"="Luftdruck Trend";
+"Brightness"="Helligkeit";
+"Sun Elevation"="Sonnen Elevation";
+"Sun Azimut"="Sonnen Azimut";
