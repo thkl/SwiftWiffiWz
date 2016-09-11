@@ -54,14 +54,17 @@ public class MeasurementViewController: UIViewController {
     
     vwCo2Gauge.addSubview(ringProgressView!)
     
+    NotificationCenter.default.addObserver(self, selector: #selector(updateMeasurements), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
   }
   
   func updateMeasurements() {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
     manager.fetchMeasurements { (error, rec_measurement) in
       
       if (error == nil) {
         self.measurement = rec_measurement;
         DispatchQueue.main.async(execute: {
+          UIApplication.shared.isNetworkActivityIndicatorVisible = false
           self.updateUI()
         })
       } else {
