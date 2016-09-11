@@ -9,3 +9,5 @@
 "stabil"="stable";
 "fallend"="falling";
 "steigend"="rising";
+"stark_fallend"="falling fast";
+"stark_steigend"="rising fast";
