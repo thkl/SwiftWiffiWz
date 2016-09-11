@@ -17,6 +17,7 @@
 		E9A1F5411D84A261005DE518 /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A1F5401D84A261005DE518 /* MKGradientGenerator.swift */; };
 		E9E342471D83467A00094925 /* MeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E342461D83467A00094925 /* MeasurementViewController.swift */; };
 		E9E3424D1D834F9800094925 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9E3424F1D834F9800094925 /* Localizable.strings */; };
+		E9E3425A1D856E1500094925 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E342591D856E1500094925 /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		E9E342511D834FB900094925 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		E9E342521D834FB900094925 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E9E342531D834FB900094925 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9E342581D856C5400094925 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		E9E342591D856E1500094925 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		E931E5BD1D82F20400548263 = {
 			isa = PBXGroup;
 			children = (
+				E9E342591D856E1500094925 /* screenshot.png */,
 				E931E5C81D82F20400548263 /* WiffiWZ */,
 				E931E5E91D82F7DE00548263 /* WiffiWZTests */,
 				E931E5C71D82F20400548263 /* Products */,
@@ -204,6 +208,7 @@
 				E9E3424D1D834F9800094925 /* Localizable.strings in Resources */,
 				E931E5D51D82F20400548263 /* Assets.xcassets in Resources */,
 				E931E5D31D82F20400548263 /* Main.storyboard in Resources */,
+				E9E3425A1D856E1500094925 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 			children = (
 				E931E5D21D82F20400548263 /* Base */,
 				E9E342511D834FB900094925 /* de */,
+				E9E342581D856C5400094925 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

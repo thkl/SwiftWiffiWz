@@ -23,6 +23,10 @@ public class MeasurementViewController: UIViewController {
   @IBOutlet weak var vwCo2Gauge: UIView!
   @IBOutlet weak var lblCo2: UILabel!
   @IBOutlet weak var lblAirPressure: UILabel!
+  @IBOutlet weak var lblAirPressureTrend: UILabel!
+  @IBOutlet weak var imgLeftMotion: UIImageView!
+  @IBOutlet weak var imgRightMotion: UIImageView!
+  @IBOutlet weak var lblNoise: UILabel!
   
   
   override public var preferredStatusBarStyle: UIStatusBarStyle {
@@ -78,83 +82,25 @@ public class MeasurementViewController: UIViewController {
     ringProgressView!.progress = (self.measurement!.sensor_co2.doubleValue/100)
     lblCo2.text = "\(self.measurement!.sensor_co2.doubleValue.format(f: ".0")) %"
     CATransaction.commit()
-    
     lblAirPressure.text = "\(self.measurement!.sensor_airpressure.doubleValue.format(f: ".2")) mbar"
+    let trend = NSLocalizedString(self.measurement!.sensor_airpressuretrend,comment:"")
+    lblAirPressureTrend.text = "\(trend)"
+    
+    let irdImage = UIImage(named: "infrared-motion-detector")
+
+    imgLeftMotion.image = irdImage?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+    imgRightMotion.image = irdImage?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+    
+    imgLeftMotion.tintColor = (self.measurement!.sensor_motion_left) ? UIColor.red : UIColor.white
+    imgRightMotion.tintColor = (self.measurement!.sensor_motion_right) ? UIColor.red : UIColor.white
+    
+    
+    let l_yes = NSLocalizedString("yes",comment: "yes");
+    let l_no = NSLocalizedString("no",comment: "no");
+    
+    lblNoise.text = "\((self.measurement!.sensor_isNoise) ? l_yes:l_no)"
+
   }
-  
-  /*
-   let l_yes = NSLocalizedString("yes",comment: "yes");
-   let l_no = NSLocalizedString("no",comment: "no");
-   
-   switch indexPath.row {
-   
-   case 0:
-   cell.textLabel?.text = NSLocalizedString("CO2",comment: "CO2")
-   cell.detailTextLabel?.text = "\(self.measurement!.sensor_co2.doubleValue.format(f: ".0")) %"
-   break;
-   
-   case 1:
-   cell.textLabel?.text = NSLocalizedString("Temperature",comment: "Temperature")
-   cell.detailTextLabel?.text = "\(self.measurement!.sensor_temperature.doubleValue.format(f: ".2")) °C"
-   break;
-   
-   
-   case 2:
-   cell.textLabel?.text = NSLocalizedString("Humidity",comment: "Humidity")
-   cell.detailTextLabel?.text = "\(self.measurement!.sensor_humidity.doubleValue.format(f: ".2")) %"
-   break;
-   
-   
-   case 3:
-   cell.textLabel?.text = NSLocalizedString("Noise", comment: "Noise")
-   cell.detailTextLabel?.text = "\((self.measurement!.sensor_isNoise) ? l_yes:l_no)"
-   break;
-   
-   
-   case 4:
-   cell.textLabel?.text = NSLocalizedString("Motion left",comment: "Motion Left")
-   cell.detailTextLabel?.text = "\((self.measurement!.sensor_motion_left) ? l_yes:l_no)"
-   break;
-   
-   case 5:
-   cell.textLabel?.text = NSLocalizedString("Motion right",comment: "Motion right")
-   cell.detailTextLabel?.text = "\((self.measurement!.sensor_motion_right) ? l_yes:l_no )"
-   break;
-   
-   
-   case 6:
-   cell.textLabel?.text = NSLocalizedString("Airpressure",comment: "Airpressure")
-   cell.detailTextLabel?.text = "\(self.measurement!.sensor_airpressure.doubleValue.format(f: ".2")) mbar"
-   break;
-   
-   case 7:
-   cell.textLabel?.text = NSLocalizedString("Airpressure trend",comment: "Airpressure trend")
-   cell.detailTextLabel?.text = "\(self.measurement!.sensor_airpressuretrend)"
-   break;
-   
-   
-   case 8:
-   cell.textLabel?.text = NSLocalizedString("Brightness",comment: "Brightness")
-   cell.detailTextLabel?.text = "\((self.measurement!.sensor_light).doubleValue.format(f: ".2")) lux"
-   break;
-   
-   case 9:
-   cell.textLabel?.text = NSLocalizedString("Sun Elevation",comment: "Sun Elevation")
-   cell.detailTextLabel?.text = "\(self.measurement!.sensor_elevation.doubleValue.format(f: ".2")) °"
-   break;
-   
-   case 10:
-   cell.textLabel?.text = NSLocalizedString("Sun Azimut",comment: "Sun Azimut")
-   cell.detailTextLabel?.text = "\(self.measurement!.sensor_azimut.doubleValue.format(f: ".2")) °"
-   break;
-   
-   default:
-   cell.textLabel?.text = "---"
-   }
-   
-   return cell
-   }
-   */
 }
 
 

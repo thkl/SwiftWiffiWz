@@ -9,28 +9,28 @@
 "DlI-DX-h9J.text" = "WiffiWZ";
 
 /* Class = "UILabel"; text = "Noise"; ObjectID = "HjO-hQ-rFr"; */
-"HjO-hQ-rFr.text" = "Geräusch";
+"HjO-hQ-rFr.text" = "Noise";
 
 /* Class = "UILabel"; text = "Air Pressure"; ObjectID = "Hmv-6o-Cdh"; */
-"Hmv-6o-Cdh.text" = "Luftdruck";
+"Hmv-6o-Cdh.text" = "Air Pressure";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "IjU-CF-P8S"; */
 "IjU-CF-P8S.text" = "--";
 
 /* Class = "UILabel"; text = "Air Quality"; ObjectID = "KaO-em-fgA"; */
-"KaO-em-fgA.text" = "Luft Qualität";
+"KaO-em-fgA.text" = "Air Quality";
 
 /* Class = "UILabel"; text = "-- mbar"; ObjectID = "LxA-lt-XTw"; */
 "LxA-lt-XTw.text" = "-- mbar";
 
 /* Class = "UILabel"; text = "Brightness"; ObjectID = "Rba-xz-l1E"; */
-"Rba-xz-l1E.text" = "Helligkeit";
+"Rba-xz-l1E.text" = "Brightness";
 
 /* Class = "UILabel"; text = "-- °C"; ObjectID = "VKl-dI-LZh"; */
 "VKl-dI-LZh.text" = "-- °C";
 
 /* Class = "UILabel"; text = "Left"; ObjectID = "ZVK-PZ-obV"; */
-"ZVK-PZ-obV.text" = "Links";
+"ZVK-PZ-obV.text" = "Left";
 
 /* Class = "UILabel"; text = "Trend"; ObjectID = "dhw-GS-YDI"; */
 "dhw-GS-YDI.text" = "Trend";
@@ -39,7 +39,7 @@
 "eDu-kO-PHe.text" = "--";
 
 /* Class = "UILabel"; text = "Humidity"; ObjectID = "fBL-Yb-4p0"; */
-"fBL-Yb-4p0.text" = "Feuchtigkeit";
+"fBL-Yb-4p0.text" = "Humidity";
 
 /* Class = "UILabel"; text = "00 %"; ObjectID = "on5-1l-BbE"; */
 "on5-1l-BbE.text" = "00 %";
@@ -48,4 +48,4 @@
 "snO-ES-l2h.text" = "-- %";
 
 /* Class = "UILabel"; text = "Right"; ObjectID = "vHX-SQ-NOe"; */
-"vHX-SQ-NOe.text" = "Rechts";
+"vHX-SQ-NOe.text" = "Right";
