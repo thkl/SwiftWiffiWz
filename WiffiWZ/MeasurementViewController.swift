@@ -55,6 +55,9 @@ public class MeasurementViewController: UIViewController {
     vwCo2Gauge.addSubview(ringProgressView!)
     
     NotificationCenter.default.addObserver(self, selector: #selector(updateMeasurements), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+    
+    let gesture = UILongPressGestureRecognizer(target: self, action: #selector(askCo2Calibration(gestureRecognizer:)))
+    vwCo2Gauge.addGestureRecognizer(gesture)
   }
   
   func updateMeasurements() {
@@ -71,6 +74,29 @@ public class MeasurementViewController: UIViewController {
         print("WiffiWZ Update Error %@" , error)
       }
       
+    }
+  }
+  
+  func askCo2Calibration(gestureRecognizer : UILongPressGestureRecognizer) {
+    if (gestureRecognizer.state == .began) {
+    let actionSheetController: UIAlertController = UIAlertController(title: "CO2 Calibration", message: "Whould you use the current air quality as 100% ?", preferredStyle: .alert)
+    
+    let cancelAction: UIAlertAction = UIAlertAction(title: "No", style: .cancel) { action -> Void in
+      //Just dismiss the action sheet
+    }
+
+    actionSheetController.addAction(cancelAction)
+    let doItAction: UIAlertAction = UIAlertAction(title: "Yes", style: .default) { action -> Void in
+      self.manager.calibrateCO2Sensor(completion: { (error) in
+        self.updateMeasurements()
+      })
+    }
+    
+    actionSheetController.addAction(doItAction)
+    
+    DispatchQueue.main.async {
+      self.present(actionSheetController, animated: true, completion: nil)
+    }
     }
   }
   
